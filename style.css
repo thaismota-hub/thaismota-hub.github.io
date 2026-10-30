@@ -29,22 +29,63 @@ body {
   padding: 0 20px;
 }
 
-/* HEADER & NAV */
+/* HEADER */
+/* .header {
+  height: 25rem;;;;;;pot
+} */
+
 .header {
-  background-color: rgba(15, 23, 42, 0.9);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  border-bottom: 1px solid var(--border);
-  padding: 15px 0;
+  position: relative; /* Define a referência para as filhas */
+  width: 300px;
+  height: 300px;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.background-image {
+  /* background-image: url('assets/bg-header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16rem;
+  width: 100%;
+  position: absolute;
+  z-index: 1; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  z-index: 1;
 }
+
+.header-container {
+  /* position: absolute;
+  /* width: 10rem;
+  height: 10rem;
+  top: 100px;
+  left: 100px; */
+    position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  z-index: 2;
+}
+/* 
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: white;
+  
+}
+
+.retangulo {
+  width: 14rem;
+  height: 5rem;
+  background-color: white;
+  margin-top: -4rem;
+} */
 
 .logo {
   font-size: 1.2rem;
